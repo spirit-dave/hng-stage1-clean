@@ -1,0 +1,20 @@
+POST http://localhost:3000/api/profiles
+Content-Type: application/json
+
+{
+  "name": "ella"
+}
+### Get all profiles
+GET http://localhost:3000/api/profiles
+
+### Filter by gender
+GET http://localhost:3000/api/profiles?gender=female
+
+### Filter by country
+GET http://localhost:3000/api/profiles?country_id=NG
+
+### Filter multiple
+GET http://localhost:3000/api/profiles?gender=female&age_group=adult
+
+### Delete profile
+DELETE http://localhost:3000/api/profiles/18b7cc45-dfef-474f-ab95-26b982d8d9b9
